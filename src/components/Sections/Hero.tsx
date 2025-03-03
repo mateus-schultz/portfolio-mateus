@@ -4,7 +4,7 @@ import { Typewriter } from "react-simple-typewriter";
 import Image from "next/image";
 import Link from "next/link";
 
-import { BackgroundCircles } from "./BackgroundCircles";
+import { BackgroundCircles } from "../BackgroundCircles";
 
 export const Hero = () => {
   return (

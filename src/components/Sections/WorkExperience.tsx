@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-import { ExperienceCard } from "./ExperienceCard";
+import { ExperienceCard } from "../ExperienceCard";
 
 export const WorkExperience = () => {
   return (

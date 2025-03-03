@@ -1,7 +1,8 @@
-import { Header } from "@/components/Header";
-import { Hero } from "@/components/Hero";
-import { About } from "@/components/About";
-import { WorkExperience } from "@/components/WorkExperience";
+import { Header } from "@/components/Sections/Header";
+import { Hero } from "@/components/Sections/Hero";
+import { About } from "@/components/Sections/About";
+import { WorkExperience } from "@/components/Sections/WorkExperience";
+import { Skills } from "@/components/Sections/Skills";
 
 export default function Home() {
   return (
@@ -18,6 +19,10 @@ export default function Home() {
 
       <section id="experience" className="snap-center">
         <WorkExperience />
+      </section>
+
+      <section id="skills" className="snap-start">
+        <Skills />
       </section>
     </div>
   );
