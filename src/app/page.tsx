@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { ChevronDoubleUpIcon } from "@heroicons/react/24/solid";
+
 import { Header } from "@/components/Sections/Header";
 import { Hero } from "@/components/Sections/Hero";
 import { About } from "@/components/Sections/About";
@@ -34,6 +37,10 @@ export default function Home() {
       <section id="contact" className="snap-start">
         <Contact />
       </section>
+
+      <Link href="#hero">
+        <ChevronDoubleUpIcon className="sticky bottom-5 h-10 w-10 ml-auto m-2 text-[#F7AB0A]" />
+      </Link>
     </div>
   );
 }
