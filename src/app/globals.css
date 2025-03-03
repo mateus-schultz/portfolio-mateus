@@ -5,6 +5,12 @@
   --font-mono: var(--font-geist-mono);
 }
 
+@layer components {
+  .heroButton {
+    @apply px-4 py-2 border border-[#242424] rounded-full uppercase text-xs tracking-widest cursor-pointer text-gray-500 transition-all hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40;
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
