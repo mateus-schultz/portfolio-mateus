@@ -3,6 +3,7 @@ import { Hero } from "@/components/Sections/Hero";
 import { About } from "@/components/Sections/About";
 import { WorkExperience } from "@/components/Sections/WorkExperience";
 import { Skills } from "@/components/Sections/Skills";
+import { Projects } from "@/components/Sections/Projects";
 
 export default function Home() {
   return (
@@ -23,6 +24,10 @@ export default function Home() {
 
       <section id="skills" className="snap-start">
         <Skills />
+      </section>
+
+      <section id="projects" className="snap-start">
+        <Projects />
       </section>
     </div>
   );
