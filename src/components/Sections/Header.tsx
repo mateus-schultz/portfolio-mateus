@@ -38,6 +38,7 @@ export const Header = () => {
             network="email"
             fgColor="gray"
             bgColor="transparent"
+            url="#contact"
           />
           <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
             Get in touch
