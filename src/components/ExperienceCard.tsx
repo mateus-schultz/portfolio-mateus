@@ -34,7 +34,7 @@ export const ExperienceCard = ({
         />
       </motion.div>
 
-      <div className="px-0 md:px-10 overflow-y-auto">
+      <div className="px-0 md:px-10 overflow-y-auto scrollbar scrollbar-thin">
         <h4 className="text-4xl font-light">{experience.title}</h4>
         <p className="font-bold text-2xl mt-1">{experience.company}</p>
         <p className="uppercase py-5 text-gray-300">{experience.date}</p>
