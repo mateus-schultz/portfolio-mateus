@@ -8,7 +8,7 @@ export const WorkExperience = () => {
   const experiences: ExperienceType[] = [
     {
       id: 1,
-      url: "/pitang.png",
+      url: "/portfolio-mateus/pitang.png",
       title: "Full Stack Engineer",
       company: "Pitang",
       date: "SEP 2022 - CURRENT",
@@ -29,7 +29,7 @@ export const WorkExperience = () => {
     },
     {
       id: 2,
-      url: "/bbchain.png",
+      url: "/portfolio-mateus/bbchain.png",
       title: "Frontend Developer",
       company: "BBChain",
       date: "OCT 2020 - SEP 2022",
@@ -43,7 +43,7 @@ export const WorkExperience = () => {
     },
     {
       id: 3,
-      url: "/atelie.png",
+      url: "/portfolio-mateus/atelie.png",
       title: "Full Stack Developer",
       company: "Ateliê de Software",
       date: "FEB 2019 - OCT 2020",
@@ -58,7 +58,7 @@ export const WorkExperience = () => {
     },
     {
       id: 4,
-      url: "/deal.png",
+      url: "/portfolio-mateus/deal.png",
       title: "Frontend Developer",
       company: "Deal",
       date: "JAN 2020 - JUN 2020",
@@ -70,7 +70,7 @@ export const WorkExperience = () => {
     },
     {
       id: 5,
-      url: "/soitic.png",
+      url: "/portfolio-mateus/soitic.png",
       title: "Full Stack Developer",
       company: "Soitic",
       date: "NOV 2015 - APR 2017",

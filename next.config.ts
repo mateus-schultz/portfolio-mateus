@@ -1,10 +1,12 @@
 import type { NextConfig } from "next";
+import { name } from "./package.json";
 
 const nextConfig: NextConfig = {
   images: {
     domains: ["github.com"],
+    unoptimized: true,
   },
-  basePath: "/portfolio-mateus",
+  basePath: `/${name}`,
   output: "export",
 };
 
