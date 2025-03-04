@@ -19,12 +19,14 @@ export const Header = () => {
             fgColor="gray"
             bgColor="transparent"
             url="https://github.com/mateus-schultz"
+            target="_blank"
           />
           <SocialIcon
             network="linkedin"
             fgColor="gray"
             bgColor="transparent"
             url="https://www.linkedin.com/in/mateus-schultz-980380149/"
+            target="_blank"
           />
         </motion.div>
 
@@ -40,6 +42,7 @@ export const Header = () => {
               network="email"
               fgColor="gray"
               bgColor="transparent"
+              as="span"
             />
             <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
               Get in touch

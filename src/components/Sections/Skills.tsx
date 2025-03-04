@@ -20,7 +20,7 @@ export const Skills = () => {
         Hover over a skill for current proficiency
       </h3>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5">
+      <div className="grid grid-cols-3 sm:grid-cols-4 gap-5">
         <Skill />
         <Skill />
         <Skill />

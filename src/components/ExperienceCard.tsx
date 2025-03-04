@@ -3,9 +3,22 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-export const ExperienceCard = () => {
+export interface ExperienceType {
+  id: number;
+  url: string;
+  title: string;
+  company: string;
+  date: string;
+  summaryPoints: string[];
+}
+
+export const ExperienceCard = ({
+  experience,
+}: {
+  experience: ExperienceType;
+}) => {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-[600px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
+    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-[600px] snap-center bg-[#292929] p-10 opacity-100 transition-opacity duration-200 overflow-hidden">
       <motion.div
         initial={{ opacity: 0, y: -100 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -14,34 +27,22 @@ export const ExperienceCard = () => {
       >
         <Image
           className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover object-center"
-          src="/soitic.svg"
-          alt="Soitic"
+          src={experience.url}
+          alt={experience.company}
           width={200}
           height={200}
         />
       </motion.div>
 
-      <div className="px-0 md:px-10">
-        <h4 className="text-4xl font-light">Software Engineer</h4>
-        <p className="font-bold text-2xl mt-1">Soitic</p>
-        <div className="flex space-x-2 my-2">
-          <Image
-            className="h-10 w-10 rounded-full"
-            src="https://github.com/mateus-schultz.png"
-            alt="Mateus Schultz"
-            width={200}
-            height={200}
-          />
-        </div>
+      <div className="px-0 md:px-10 overflow-y-auto">
+        <h4 className="text-4xl font-light">{experience.title}</h4>
+        <p className="font-bold text-2xl mt-1">{experience.company}</p>
+        <p className="uppercase py-5 text-gray-300">{experience.date}</p>
 
-        <p className="uppercase py-5 text-gray-300">Blabla... - bla...</p>
-
-        <ul className="list-disc space-y-4 ml-5 text-lg">
-          <li>Summary points</li>
-          <li>Summary points</li>
-          <li>Summary points</li>
-          <li>Summary points</li>
-          <li>Summary points</li>
+        <ul className="list-disc space-y-4 ml-5 text-lg text-left">
+          {experience.summaryPoints.map((point, i) => (
+            <li key={i}>{point}</li>
+          ))}
         </ul>
       </div>
     </article>

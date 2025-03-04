@@ -27,7 +27,7 @@ export const Hero = () => {
               words={[
                 "Hi, The Name's Mateus",
                 "I'm a Web Developer",
-                "<LoveToCode />",
+                "<LoveCode />",
               ]}
               loop
               cursor

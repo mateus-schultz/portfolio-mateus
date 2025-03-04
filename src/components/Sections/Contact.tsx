@@ -36,21 +36,16 @@ export const Contact = () => {
 
   return (
     <motion.div
-      className="h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center"
+      className="h-screen flex flex-col text-center md:text-left max-w-7xl px-10 justify-evenly mx-auto items-center"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="uppercase tracking-[20px] text-gray-500 text-2xl">
         Contact
       </h3>
 
       <div className="flex flex-col space-y-10">
-        <h4 className="text-4xl font-semibold">
-          Contact me{" "}
-          <span className="decoration-[#F7AB0A]/50 underline">Now</span>
-        </h4>
-
         <div className="space-y-10">
           <div className="flex items-center space-x-5 justify-center">
             <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
@@ -72,8 +67,8 @@ export const Contact = () => {
           className="flex flex-col space-y-2 w-fit mx-auto"
           onSubmit={handleSubmit(onSubmit)}
         >
-          <div className="flex space-x-2">
-            <div className="flex flex-col space-y-2 flex-1">
+          <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 space-x-0 md:space-x-2">
+            <div className="flex flex-col space-y-2">
               <input
                 className="contactInput"
                 type="text"
@@ -84,7 +79,7 @@ export const Contact = () => {
                 <p className="text-red-500">{errors.name.message}</p>
               )}
             </div>
-            <div className="flex flex-col space-y-2 flex-1">
+            <div className="flex flex-col space-y-2">
               <input
                 className="contactInput"
                 type="email"
