@@ -48,17 +48,17 @@ export const Contact = () => {
       >
         <div className="flex flex-col space-y-10">
           <div className="space-y-10">
-            <div className="flex items-center space-x-5 justify-center">
+            <div className="flex items-center space-x-1 justify-center">
               <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
               <p className="text-2xl">+55 (35) 9 9849-6105</p>
             </div>
 
-            <div className="flex items-center space-x-5 justify-center">
+            <div className="flex items-center space-x-1 justify-center">
               <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
               <p className="text-2xl">Minas Gerais, Brazil</p>
             </div>
 
-            <div className="flex items-center space-x-5 justify-center">
+            <div className="flex items-center space-x-1 justify-center">
               <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
               <p className="text-2xl">mateusbrasil1994@hotmail.com</p>
             </div>
