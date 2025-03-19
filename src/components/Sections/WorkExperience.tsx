@@ -88,12 +88,12 @@ export const WorkExperience = () => {
       </h3>
 
       <motion.div
-        className="flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly items-center"
+        className="flex relative flex-col text-center md:text-left md:flex-row max-w-md sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl px-10 justify-evenly items-center"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
       >
-        <div className="w-full max-h-160 md:max-h-200 flex space-x-5 overflow-x-auto p-10 snap-x snap-mandatory scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
+        <div className="w-full max-h-160 md:max-h-200 flex space-x-5 overflow-x-auto p-10 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
           {experiences.map((experience) => (
             <ExperienceCard key={experience.id} experience={experience} />
           ))}
