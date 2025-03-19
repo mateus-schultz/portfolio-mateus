@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    <header className="fixed w-full top-0 p-5 z-20">
+    <header className="w-full top-0 p-5 z-20 bg-[rgb(36,36,36)]">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         <motion.div
           className="flex items-center"

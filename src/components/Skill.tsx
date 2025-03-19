@@ -8,22 +8,16 @@ export interface SkillType {
 
 export const Skill = ({ skill }: { skill: SkillType }) => {
   return (
-    <div className="group relative flex cursor-pointer">
-      <div className="w-24 h-24 md:w-28 md:h-28 xl:w-32 xl:h-32 border border-gray-500 rounded-full flex items-center justify-center group-hover:bg-white filter group-hover:grayscale transition duration-300 ease-in-out">
-        <Image
-          className="w-16 h-16 object-cover"
-          src={skill.url}
-          alt={skill.title}
-          width={200}
-          height={200}
-        />
-        <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-24 w-24 rounded-full z-0 md:w-28 md:h-28 xl:w-32 xl:h-32">
-          <div className="flex items-center justify-center h-full">
-            <p className="text-xl sm:text-2xl font-bold text-black opacity-100">
-              {skill.title}
-            </p>
-          </div>
-        </div>
+    <div className="flex flex-col items-center justify-center space-y-2 w-32 h-32 border border-gray-500 rounded-lg">
+      <Image
+        className="w-16 h-16 object-cover"
+        src={skill.url}
+        alt={skill.title}
+        width={200}
+        height={200}
+      />
+      <div className="flex items-center justify-center">
+        <p className="text-xl font-bold">{skill.title}</p>
       </div>
     </div>
   );
