@@ -6,8 +6,8 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    <header className="sticky top-0 p-5 max-w-7xl mx-auto z-20">
-      <div className="flex items-center justify-between">
+    <header className="fixed w-full top-0 p-5 z-20">
+      <div className="flex items-center justify-between max-w-7xl mx-auto">
         <motion.div
           className="flex items-center"
           initial={{ x: -500, opacity: 0, scale: 0.5 }}

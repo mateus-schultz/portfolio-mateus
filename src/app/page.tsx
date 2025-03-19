@@ -38,8 +38,8 @@ export default function Home() {
         <Contact />
       </section>
 
-      <Link href="#hero" scroll>
-        <ChevronDoubleUpIcon className="sticky bottom-5 h-10 w-10 ml-auto m-2 text-[#F7AB0A]" />
+      <Link href="#hero">
+        <ChevronDoubleUpIcon className="fixed bottom-5 right-5 h-10 w-10 m-2 text-[#F7AB0A]" />
       </Link>
     </div>
   );
