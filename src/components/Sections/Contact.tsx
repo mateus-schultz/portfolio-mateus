@@ -17,6 +17,7 @@ const schema = z.object({
     .string()
     .min(3, { message: "Message must be at least 3 characters long" }),
   email: z.string().email({ message: "Invalid email address" }),
+  honeyPot: z.string().optional(),
 });
 
 type FormType = z.infer<typeof schema>;
@@ -31,6 +32,7 @@ export const Contact = () => {
   });
 
   const onSubmit: SubmitHandler<FormType> = (data) => {
+    if (data.honeyPot) return;
     window.location.href = `mailto:mateusbrasil1994@hotmail.com?subject=${data.subject}&body=Hi, my name is ${data.name}. ${data.message}`;
   };
 
@@ -115,6 +117,8 @@ export const Contact = () => {
                 <p className="text-red-500">{errors.message.message}</p>
               )}
             </div>
+
+            <input type="hidden" {...register("honeyPot")} />
 
             <button
               type="submit"
